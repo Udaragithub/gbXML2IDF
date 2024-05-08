@@ -3,6 +3,23 @@ The gbXML2IDF translator is a newly created middleware solution built on Python.
 
 This tool functions by mapping various building properties from the gbXML schema to the IDF data format. It extracts details such as geometry, thermal properties, heat gains, occupancy/lighting/equipment schedules, and HVAC specifics from the gbXML file and converts them into IDF data classes. Furthermore, it incorporates default schedules, HVAC objects, and output objects from a library to supplement any missing data.
 
+![](https://github.com/Udaragithub/gbXML2IDF/blob/main/Images/Research%20Gap%20and%20Proposed%20Tool%20(18).png)
 
-To seamlessly integrate the gbXML translator into the BIM environment, a user interface has been developed and deployed as a BIM tool (refer to Figure 09). The visual representation of the mapping of data classes can be observed in Figure 10.
-(https://github.com/Udaragithub/bim2bemtranslator/blob/main/Images/Research%20Gap%20and%20Proposed%20Tool%20(15).png)
+A rich picture of data mapping is shown below,
+
+![](https://github.com/Udaragithub/gbXML2IDF/blob/main/Images/Research%20Gap%20and%20Proposed%20Tool%20(17).png)
+
+# How to use this script?
++ Step 01 - Install python packages : lxml, xgbxml, eppy
+- Step 02 - Download gbxmlconvertor.py, GUI_01_BIM2BEM_Convertor.py and Template files folder in to the same folder
+* Step 03 - Modify Two template files (IDF_template.idf and IDF_schedules.idf files) if needed.
++ Step 04 - Run GUI_01_BIM2BEM_Convertor.py and input, working folder (which contains gbXML file), IDF_template.idf file location and IDF-Schedule.idf file location)
+
+Now following files will be created in the working folder.
+
+1. eplusrevit.idf - Ready-to-simulate IDF file
+2. material_data.csv - Summary of material data mapping (Material name of BIM file) and corresponding IDF name
+3. space_data.csv - Summary of space data (name, occupants, heat gain values) and corresponding IDF name
+
+# Are you familiar with Dynamo for Revit?
+A seperate Dynamo script is prepared which converts Autodesk Revit model into an IDF file with a single-click. Check the Dynamo script folder
