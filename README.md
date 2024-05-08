@@ -9,7 +9,7 @@ A rich picture of data mapping is shown below,
 
 ![](https://github.com/Udaragithub/gbXML2IDF/blob/main/Images/Research%20Gap%20and%20Proposed%20Tool%20(17).png)
 
-# How to use this script?
+## How to use this script?
 + Step 01 - Install python packages : lxml, xgbxml, eppy
 - Step 02 - Download gbxmlconvertor.py, GUI_01_BIM2BEM_Convertor.py and Template files folder in to the same folder
 * Step 03 - Modify Two template files (IDF_template.idf and IDF_schedules.idf files) if needed.
@@ -21,5 +21,11 @@ Now following files will be created in the working folder.
 2. material_data.csv - Summary of material data mapping (Material name of BIM file) and corresponding IDF name
 3. space_data.csv - Summary of space data (name, occupants, heat gain values) and corresponding IDF name
 
-# Are you familiar with Dynamo for Revit?
+## Are you familiar with Dynamo for Revit?
 A seperate Dynamo script is prepared which converts Autodesk Revit model into an IDF file with a single-click. Check the Dynamo script folder
+
+## Validation of the translator with test cases
+To be updated
+
+## Research works
+To be updated
